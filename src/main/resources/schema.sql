@@ -1,0 +1,46 @@
+CREATE TABLE app_user (
+ id VARCHAR2(36 CHAR) PRIMARY KEY, username VARCHAR2(30 CHAR) NOT NULL UNIQUE,
+ display_name VARCHAR2(30 CHAR) NOT NULL, password_hash VARCHAR2(100 CHAR) NOT NULL
+);
+CREATE TABLE meeting (
+ id VARCHAR2(36 CHAR) PRIMARY KEY, host_id VARCHAR2(36 CHAR) NOT NULL REFERENCES app_user(id),
+ title VARCHAR2(80 CHAR) NOT NULL, description VARCHAR2(500 CHAR), area VARCHAR2(80 CHAR) NOT NULL,
+ expected_count NUMBER(3) NOT NULL CHECK(expected_count BETWEEN 2 AND 100),
+ invite_token VARCHAR2(64 CHAR) NOT NULL UNIQUE,
+ status VARCHAR2(12 CHAR) DEFAULT 'OPEN' NOT NULL CHECK(status IN ('OPEN','CONFIRMED')),
+ final_time_id VARCHAR2(36 CHAR), final_place_id VARCHAR2(36 CHAR), created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP NOT NULL
+);
+CREATE TABLE member (
+ meeting_id VARCHAR2(36 CHAR) NOT NULL REFERENCES meeting(id),
+ user_id VARCHAR2(36 CHAR) NOT NULL REFERENCES app_user(id), PRIMARY KEY(meeting_id,user_id)
+);
+CREATE TABLE poll_option (
+ id VARCHAR2(36 CHAR) PRIMARY KEY, meeting_id VARCHAR2(36 CHAR) NOT NULL REFERENCES meeting(id),
+ kind VARCHAR2(5 CHAR) NOT NULL CHECK(kind IN ('TIME','PLACE')), title VARCHAR2(120 CHAR) NOT NULL,
+ detail VARCHAR2(300 CHAR), map_url VARCHAR2(500 CHAR), phone VARCHAR2(40 CHAR),
+ reservation VARCHAR2(12 CHAR) DEFAULT 'UNKNOWN' NOT NULL CHECK(reservation IN ('UNKNOWN','AVAILABLE','BOOKED')),
+ reservation_note VARCHAR2(300 CHAR), created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP NOT NULL
+);
+CREATE TABLE vote (
+ meeting_id VARCHAR2(36 CHAR) NOT NULL, user_id VARCHAR2(36 CHAR) NOT NULL,
+ option_id VARCHAR2(36 CHAR) NOT NULL REFERENCES poll_option(id),
+ PRIMARY KEY(meeting_id,user_id,option_id), FOREIGN KEY(meeting_id,user_id) REFERENCES member(meeting_id,user_id)
+);
+CREATE INDEX option_meeting_idx ON poll_option(meeting_id);
+CREATE INDEX member_user_idx ON member(user_id);
+CREATE TABLE account_kind (
+ user_id VARCHAR2(36 CHAR) PRIMARY KEY REFERENCES app_user(id),
+ kind VARCHAR2(5 CHAR) NOT NULL CHECK(kind IN ('GUEST','HOST'))
+);
+CREATE TABLE social_identity (
+ provider VARCHAR2(20 CHAR) NOT NULL, subject VARCHAR2(255 CHAR) NOT NULL,
+ user_id VARCHAR2(36 CHAR) NOT NULL REFERENCES app_user(id), PRIMARY KEY(provider,subject)
+);
+CREATE TABLE guest_link (
+ id VARCHAR2(36 CHAR) PRIMARY KEY, meeting_id VARCHAR2(36 CHAR) NOT NULL REFERENCES meeting(id),
+ label VARCHAR2(30 CHAR) NOT NULL, token_hash VARCHAR2(64 CHAR) NOT NULL UNIQUE,
+ guest_user_id VARCHAR2(36 CHAR) REFERENCES app_user(id), revoked NUMBER(1) DEFAULT 0 NOT NULL CHECK(revoked IN (0,1)),
+ created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP NOT NULL, expires_at TIMESTAMP NOT NULL
+);
+CREATE INDEX guest_link_meeting_idx ON guest_link(meeting_id);
+

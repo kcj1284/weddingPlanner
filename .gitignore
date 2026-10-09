@@ -1,0 +1,10 @@
+.venv-speckit/
+
+.tools/
+target/
+data/
+*.log
+.env*
+.idea/
+node_modules/
+artifacts/
