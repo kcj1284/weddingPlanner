@@ -44,4 +44,3 @@ CREATE TABLE IF NOT EXISTS guest_link (
  created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP NOT NULL, expires_at TIMESTAMP NOT NULL
 );
 CREATE INDEX IF NOT EXISTS guest_link_meeting_idx ON guest_link(meeting_id);
-
