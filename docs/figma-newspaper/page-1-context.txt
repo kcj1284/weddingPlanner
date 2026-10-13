@@ -1,0 +1,248 @@
+const assetPathPrefix = "https://www.figma.com/api/mcp/asset/003733fb-163b-4dfe-abaf-f471be8a277a";
+const img51 = `${assetPathPrefix}/268b2.png`;
+const imgEllipse6 = `${assetPathPrefix}/62c19.png`;
+const imgVector1 = `${assetPathPrefix}/6cf57.svg`;
+const imgVector2 = `${assetPathPrefix}/5b501.svg`;
+const imgEllipse1 = `${assetPathPrefix}/e9223.svg`;
+const imgVector4 = `${assetPathPrefix}/b0382.svg`;
+const imgVector6 = `${assetPathPrefix}/3eb0a.svg`;
+const imgVector = `${assetPathPrefix}/951ba.svg`;
+const imgLine6 = `${assetPathPrefix}/c9099.svg`;
+const imgLine7 = `${assetPathPrefix}/47058.svg`;
+const imgLine8 = `${assetPathPrefix}/26ea6.svg`;
+
+export default function A41() {
+  return (
+    <div className="bg-white relative size-full" data-node-id="4001:2" data-name="A4 - 1">
+      <div className="absolute inset-[5.27%_6.15%_94.73%_3.03%]" data-node-id="4001:200">
+        <div className="absolute inset-[-1.53px_0]">
+          <img alt="" className="block max-w-none size-full" src={imgVector1} />
+        </div>
+      </div>
+      <div className="absolute inset-[17.66%_6.15%_82.34%_3.03%]" data-node-id="4001:201">
+        <div className="absolute inset-[-0.31px_0]">
+          <img alt="" className="block max-w-none size-full" src={imgVector2} />
+        </div>
+      </div>
+      <div className="absolute inset-[21.08%_6.15%_78.92%_3.03%]" data-node-id="4001:202">
+        <div className="absolute inset-[-0.31px_0]">
+          <img alt="" className="block max-w-none size-full" src={imgVector2} />
+        </div>
+      </div>
+      <p className="[word-break:break-word] absolute bottom-[83.17%] font-['.New_York:Regular_G1'] leading-[normal] left-[calc(50%-279.5px)] not-italic text-[80.964px] text-black top-[5.31%] whitespace-nowrap" data-node-id="4001:203">
+        Wedding Times
+      </p>
+      <p className="[word-break:break-word] absolute font-['Libre_Bodoni:Bold'] font-bold inset-[2.98%_86.05%_95.24%_3.03%] leading-[normal] text-[12.228px] text-black whitespace-nowrap" data-node-id="4001:204">
+        Newspaper
+      </p>
+      <p className="[word-break:break-word] absolute font-['Libre_Bodoni:Bold'] font-bold inset-[2.98%_41.36%_95.24%_38.31%] leading-[normal] text-[12.228px] text-black whitespace-nowrap" data-node-id="4001:205">
+        Sunday, Sept 6, 2026
+      </p>
+      <p className="[word-break:break-word] absolute font-['NanumMyeongjo:ExtraBold'] font-black inset-[3.05%_6.05%_95.28%_81.51%] leading-[normal] text-[12.228px] text-black whitespace-nowrap" data-node-id="4001:206" style={{ fontVariationSettings: '"CTGR" 0, "wdth" 100' }}>
+        상견례 특집호
+      </p>
+      <div className="absolute contents inset-[18.46%_39.53%_79.76%_32.75%]" data-node-id="4001:207">
+        <p className="[word-break:break-word] absolute font-['Libre_Bodoni:Bold'] font-bold inset-[18.46%_55.99%_79.76%_32.75%] leading-[normal] text-[12.228px] text-black whitespace-nowrap" data-node-id="4001:208">
+          manjoobuu
+        </p>
+        <p className="[word-break:break-word] absolute font-['Libre_Bodoni:Bold'] font-bold inset-[18.46%_39.53%_79.76%_49.21%] leading-[normal] text-[12.228px] text-black whitespace-nowrap" data-node-id="4001:209">
+          manjoobuu
+        </p>
+        <div className="absolute inset-[19.04%_53.46%_80.37%_45.71%]" data-node-id="4001:210">
+          <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgEllipse1} />
+        </div>
+      </div>
+      <div className="absolute border-[0.612px] border-black border-solid h-[250px] left-[361px] top-[194px] w-[200px]" data-node-id="4001:211" data-name="스캔 5 1">
+        <img alt="" className="absolute inset-0 max-w-none object-cover pointer-events-none size-full" src={img51} />
+      </div>
+      <div className="[word-break:break-word] absolute font-['Diphylleia:Regular'] inset-[22.46%_54.12%_66.97%_3.03%] leading-[0] not-italic text-[#111] text-[24px] whitespace-nowrap" data-node-id="4001:212">
+        <p className="leading-[29.377px] mb-0 whitespace-pre">{`2027년 10월 03일 `}</p>
+        <p className="leading-[29.377px] mb-0 whitespace-pre">{`꽃다발 같은 식을 올릴 `}</p>
+        <p className="leading-[29.377px] whitespace-pre">신랑 신부를 소개합니다!</p>
+      </div>
+      <p className="[word-break:break-word] absolute font-['Diphylleia:Regular'] inset-[58.9%_42.69%_37.54%_3.03%] leading-[29.377px] not-italic text-[#111] text-[23.382px] whitespace-nowrap" data-node-id="4001:213">
+        양가 가족 구성원을 소개합니다!
+      </p>
+      <p className="[word-break:break-word] absolute font-['Diphylleia:Regular'] inset-[53.44%_9.41%_45.01%_64.54%] leading-[12.105px] not-italic text-[#111] text-[12px] whitespace-nowrap" data-node-id="4001:214">
+        Two hearts, one story begins
+      </p>
+      <p className="[word-break:break-word] absolute bottom-[3.8%] font-['Diphylleia:Regular'] leading-[12.105px] left-[calc(50%-103.5px)] not-italic text-[#111] text-[12px] top-[94.66%] whitespace-nowrap" data-node-id="4001:215">{`We're so happy to have you as family !`}</p>
+      <div className="absolute inset-[34.41%_53.46%_65.59%_3.03%]" data-node-id="4001:218">
+        <div className="absolute inset-[-0.31px_0]">
+          <img alt="" className="block max-w-none size-full" src={imgVector4} />
+        </div>
+      </div>
+      <div className="absolute inset-[63.99%_40.81%_36.01%_3.03%]" data-node-id="4001:219">
+        <div className="absolute inset-[-0.31px_0]">
+          <img alt="" className="block max-w-none size-full" src={imgVector6} />
+        </div>
+      </div>
+      <p className="[word-break:break-word] absolute font-['Pretendard:Bold'] inset-[36.94%_82.18%_61.4%_3.03%] leading-[normal] not-italic text-[#111] text-[12px] whitespace-nowrap" data-node-id="4001:220">
+        신랑 ♡ 만 쥬 쀼 ♡
+      </p>
+      <p className="[word-break:break-word] absolute font-['Pretendard:Bold'] inset-[67.34%_76.47%_31%_15.8%] leading-[normal] not-italic text-[#111] text-[12px] whitespace-nowrap" data-node-id="4001:221">
+        [ 만쥬네 ]
+      </p>
+      <p className="[word-break:break-word] absolute font-['Pretendard:Bold'] inset-[67.33%_29.08%_31%_63.19%] leading-[normal] not-italic text-[#111] text-[12px] whitespace-nowrap" data-node-id="4001:222">
+        [ 만쥬네 ]
+      </p>
+      <p className="[word-break:break-word] absolute font-['Pretendard:Bold'] inset-[36.94%_53.78%_61.4%_31.43%] leading-[normal] not-italic text-[#111] text-[12px] whitespace-nowrap" data-node-id="4001:223">
+        신부 ♡ 만 쥬 쀼 ♡
+      </p>
+      <div className="absolute contents inset-[39.43%_70.41%_45.37%_3.03%]" data-node-id="4001:639">
+        <div className="[word-break:break-word] absolute font-['Nanum_Myeongjo:Bold'] inset-[40.31%_71.24%_45.54%_3.87%] leading-[0] not-italic text-[#2a2a2a] text-[10px] whitespace-pre-wrap" data-node-id="4001:216">
+          <p className="leading-[14px] mb-0">태어난 날: 2000. 00. 00</p>
+          <p className="leading-[14px] mb-0">{`MBTI: `}</p>
+          <p className="leading-[14px] mb-0">{`혈액형: `}</p>
+          <p className="leading-[14px] mb-0">{`성격 TMI: `}</p>
+          <p className="leading-[14px] mb-0">{`키: `}</p>
+          <p className="leading-[14px] mb-0">{`직업: `}</p>
+          <p className="leading-[14px] mb-0">{`최애음식: `}</p>
+          <p className="leading-[14px]">{`못먹는음식: `}</p>
+        </div>
+        <div className="absolute inset-[39.43%_70.41%_45.37%_3.03%]" data-node-id="4001:224" data-name="Vector">
+          <div className="absolute inset-[-0.26%_-0.21%]">
+            <img alt="" className="block max-w-none size-full" src={imgVector} />
+          </div>
+        </div>
+      </div>
+      <div className="absolute contents inset-[39.43%_42.01%_45.37%_31.43%]" data-node-id="4001:640">
+        <div className="[word-break:break-word] absolute font-['Nanum_Myeongjo:Bold'] inset-[40.31%_42.84%_45.54%_32.27%] leading-[0] not-italic text-[#2a2a2a] text-[10px] whitespace-pre-wrap" data-node-id="4001:641">
+          <p className="leading-[14px] mb-0">태어난 날: 2000. 00. 00</p>
+          <p className="leading-[14px] mb-0">{`MBTI: `}</p>
+          <p className="leading-[14px] mb-0">{`혈액형: `}</p>
+          <p className="leading-[14px] mb-0">{`성격 TMI: `}</p>
+          <p className="leading-[14px] mb-0">{`키: `}</p>
+          <p className="leading-[14px] mb-0">{`직업: `}</p>
+          <p className="leading-[14px] mb-0">{`최애음식: `}</p>
+          <p className="leading-[14px]">{`못먹는음식: `}</p>
+        </div>
+        <div className="absolute inset-[39.43%_42.01%_45.37%_31.43%]" data-node-id="4001:642" data-name="Vector">
+          <div className="absolute inset-[-0.26%_-0.21%]">
+            <img alt="" className="block max-w-none size-full" src={imgVector} />
+          </div>
+        </div>
+      </div>
+      <div className="absolute inset-[57.52%_6.15%_42.48%_3.03%]" data-node-id="4001:226">
+        <div className="absolute inset-[-0.31px_0]">
+          <img alt="" className="block max-w-none size-full" src={imgVector2} />
+        </div>
+      </div>
+      <p className="[word-break:break-word] absolute font-['Nanum_Myeongjo:Bold'] inset-[78.86%_84.54%_19.48%_3.03%] leading-[13.486px] not-italic text-[#2a2a2a] text-[10px] whitespace-nowrap" data-node-id="4001:227">
+        母 김엄마 (1999)
+      </p>
+      <div className="absolute left-[23px] size-[64.734px] top-[593.92px]" data-node-id="4001:228">
+        <img alt="" className="absolute block inset-0 max-w-none size-full" height="64.734" src={imgEllipse6} width="64.734" />
+      </div>
+      <p className="[word-break:break-word] absolute font-['Nanum_Myeongjo:Bold'] inset-[78.86%_37.31%_19.48%_50.25%] leading-[13.486px] not-italic text-[#2a2a2a] text-[10px] whitespace-nowrap" data-node-id="4001:646">
+        母 김엄마 (1999)
+      </p>
+      <div className="absolute left-[304px] size-[64.734px] top-[593.92px]" data-node-id="4001:647">
+        <img alt="" className="absolute block inset-0 max-w-none size-full" height="64.734" src={imgEllipse6} width="64.734" />
+      </div>
+      <p className="[word-break:break-word] absolute font-['Nanum_Myeongjo:Bold'] inset-[78.86%_63.87%_19.48%_23.7%] leading-[13.486px] not-italic text-[#2a2a2a] text-[10px] whitespace-nowrap" data-node-id="4001:231">
+        父 이아빠 (1999)
+      </p>
+      <div className="absolute left-[145.75px] size-[64.734px] top-[593.92px]" data-node-id="4001:232">
+        <img alt="" className="absolute block inset-0 max-w-none size-full" height="64.734" src={imgEllipse6} width="64.734" />
+      </div>
+      <p className="[word-break:break-word] absolute font-['Nanum_Myeongjo:Bold'] inset-[78.86%_16.47%_19.48%_71.09%] leading-[13.486px] not-italic text-[#2a2a2a] text-[10px] whitespace-nowrap" data-node-id="4001:233">
+        父 박아빠 (1971)
+      </p>
+      <div className="absolute left-[427.73px] size-[64.734px] top-[593.92px]" data-node-id="4001:234">
+        <img alt="" className="absolute block inset-0 max-w-none size-full" height="64.734" src={imgEllipse6} width="64.734" />
+      </div>
+      <p className="[word-break:break-word] absolute font-['Nanum_Myeongjo:Bold'] inset-[90.02%_76.64%_8.32%_16.3%] leading-[13.486px] not-italic text-[#2a2a2a] text-[10px] whitespace-nowrap" data-node-id="4001:235">
+        子 만쥬쀼
+      </p>
+      <p className="[word-break:break-word] absolute font-['Nanum_Myeongjo:Bold'] inset-[90.02%_29.08%_8.32%_63.87%] leading-[13.486px] not-italic text-[#2a2a2a] text-[10px] whitespace-nowrap" data-node-id="4001:651">
+        子 만쥬쀼
+      </p>
+      <div className="absolute left-[85px] size-[64.734px] top-[688px]" data-node-id="4001:236">
+        <img alt="" className="absolute block inset-0 max-w-none size-full" height="64.734" src={imgEllipse6} width="64.734" />
+      </div>
+      <div className="absolute left-[368px] size-[64.734px] top-[688px]" data-node-id="4001:652">
+        <img alt="" className="absolute block inset-0 max-w-none size-full" height="64.734" src={imgEllipse6} width="64.734" />
+      </div>
+      <p className="[word-break:break-word] absolute font-['Nanum_Myeongjo:Bold'] inset-[90%_56.81%_8.34%_36.13%] leading-[13.486px] not-italic text-[#2a2a2a] text-[10px] whitespace-nowrap" data-node-id="4001:237">
+        女 이누나
+      </p>
+      <p className="[word-break:break-word] absolute font-['Nanum_Myeongjo:Bold'] inset-[90%_10.59%_8.34%_84.54%] leading-[13.486px] not-italic text-[#2a2a2a] text-[10px] whitespace-nowrap" data-node-id="4001:653">
+        강아지
+      </p>
+      <div className="absolute left-[203px] size-[64.734px] top-[691.02px]" data-node-id="4001:238">
+        <img alt="" className="absolute block inset-0 max-w-none size-full" height="64.734" src={imgEllipse6} width="64.734" />
+      </div>
+      <div className="absolute left-[486px] size-[64.734px] top-[691.02px]" data-node-id="4001:654">
+        <img alt="" className="absolute block inset-0 max-w-none size-full" height="64.734" src={imgEllipse6} width="64.734" />
+      </div>
+      <p className="[word-break:break-word] absolute font-['Nanum_Myeongjo:Bold'] inset-[83.97%_68.74%_14.37%_27.9%] leading-[13.486px] not-italic text-[#2a2a2a] text-[10px] whitespace-nowrap" data-node-id="4001:242">
+        남매
+      </p>
+      <p className="[word-break:break-word] absolute font-['Nanum_Myeongjo:Bold'] inset-[83.97%_21.18%_14.37%_75.46%] leading-[13.486px] not-italic text-[#2a2a2a] text-[10px] whitespace-nowrap" data-node-id="4001:655">
+        형제
+      </p>
+      <p className="[word-break:break-word] absolute font-['Nanum_Myeongjo:Bold'] inset-[72.46%_78.66%_25.88%_17.98%] leading-[13.486px] not-italic text-[#2a2a2a] text-[10px] whitespace-nowrap" data-node-id="4001:243">
+        부부
+      </p>
+      <p className="[word-break:break-word] absolute font-['Nanum_Myeongjo:Bold'] inset-[72.46%_31.26%_25.88%_65.38%] leading-[13.486px] not-italic text-[#2a2a2a] text-[10px] whitespace-nowrap" data-node-id="4001:244">
+        부부
+      </p>
+      <div className="absolute h-0 left-[91.61px] top-[626.29px] w-[49.225px]" data-node-id="4001:256">
+        <div className="absolute inset-[-0.67px_0_0_0]">
+          <img alt="" className="block max-w-none size-full" src={imgLine6} />
+        </div>
+      </div>
+      <div className="absolute h-0 left-[373.46px] top-[626.29px] w-[49.225px]" data-node-id="4001:257">
+        <div className="absolute inset-[-0.67px_0_0_0]">
+          <img alt="" className="block max-w-none size-full" src={imgLine6} />
+        </div>
+      </div>
+      <div className="absolute flex h-[56.642px] items-center justify-center left-[116.76px] top-[626.29px] w-0" data-node-id="4001:258">
+        <div className="flex-none rotate-90">
+          <div className="h-0 relative w-[56.642px]">
+            <div className="absolute inset-[-1.8px_-3.17%_-1.8px_0]">
+              <img alt="" className="block max-w-none size-full" src={imgLine7} />
+            </div>
+          </div>
+        </div>
+      </div>
+      <div className="absolute flex h-[56.642px] items-center justify-center left-[398.75px] top-[626.29px] w-0" data-node-id="4001:259">
+        <div className="flex-none rotate-90">
+          <div className="h-0 relative w-[56.642px]">
+            <div className="absolute inset-[-1.8px_-3.17%_-1.8px_0]">
+              <img alt="" className="block max-w-none size-full" src={imgLine7} />
+            </div>
+          </div>
+        </div>
+      </div>
+      <div className="absolute flex h-0 items-center justify-center left-[155px] top-[723px] w-[43px]" data-node-id="4001:260">
+        <div className="flex-none rotate-180">
+          <div className="h-0 relative w-[43px]">
+            <div className="absolute inset-[-0.34px_0]">
+              <img alt="" className="block max-w-none size-full" src={imgLine8} />
+            </div>
+          </div>
+        </div>
+      </div>
+      <div className="absolute flex h-0 items-center justify-center left-[438px] top-[723px] w-[43px]" data-node-id="4001:656">
+        <div className="flex-none rotate-180">
+          <div className="h-0 relative w-[43px]">
+            <div className="absolute inset-[-0.34px_0]">
+              <img alt="" className="block max-w-none size-full" src={imgLine8} />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  );
+}
+SUPER CRITICAL: The generated React+Tailwind code MUST be converted to match the target project's technology stack and styling system.
+1. Analyze the target codebase to identify: technology stack, styling approach, component patterns, and design tokens
+2. Convert React syntax to the target framework/library
+3. Transform all Tailwind classes to the target styling system while preserving exact visual design
+4. Follow the project's existing patterns and conventions
+DO NOT install any Tailwind as a dependency unless the user instructs you to do so.
+
+Node ids have been added to the code as data attributes, e.g. `data-node-id="1:2"`.
+Images and SVGs will be stored as constants, e.g. const image = `${assetPathPrefix}/<asset file name>`, where assetPathPrefix is declared once at the top of the code and every asset URL interpolates it. These constants will be used in the code as the source for the image, ex: <img src={image} />. Image assets are stored on a remote server for 7 days and can be fetched using the provided URLs until they expire.

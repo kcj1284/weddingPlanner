@@ -9,7 +9,7 @@
 OPEN → CONFIRMED: 호스트가 해당 모임 TIME/PLACE 각각 하나를 지정한다.
 CONFIRMED → OPEN: 호스트 재개, 확정 선택 해제, 표와 후보 유지.
 투표는 검증 후 전체 교체하고 모임 잠금으로 확정과 직렬화한다.
-SQL VARCHAR2(... CHAR)와 NUMBER는 Oracle 및 H2 Oracle mode 공통으로 사용한다.
+PostgreSQL VARCHAR/SMALLINT와 FK·유일 제약을 사용한다. created_at/expires_at은 TIMESTAMPTZ이며 만료는 절대 시각, 일정 후보 문자열은 한국 시간이다.
 
 ## 개인별 게스트 / 소셜 계정 추가
 
@@ -17,4 +17,4 @@ SQL VARCHAR2(... CHAR)와 NUMBER는 Oracle 및 H2 Oracle mode 공통으로 사�
 - social_identity(provider, subject 복합 PK, user_id FK): 제공자 고유 ID 기반 호스트 매핑. 이메일 병합 없음.
 - guest_link(id PK, meeting_id FK, label, token_hash UNIQUE, guest_user_id nullable FK, revoked, created_at, expires_at): 6자리 초대코드 SHA-256 해시, 30일 신규 접속 만료. 취소는 멤버십과 투표 제거. 동일 링크 첫 참여는 트랜잭션 행 잠금으로 한 게스트만 생성.
 
-기존 Oracle는 schema-auth.sql을 한 번 적용하며 H2 로컬은 IF NOT EXISTS로 테이블을 추가한다.
+Flyway V1__initial_schema.sql로 전체 스키마를 적용한다. 과거 Oracle/H2 DDL은 docs/legacy에 보관하고 기존 데이터는 검증된 별도 이관 절차를 따른다.

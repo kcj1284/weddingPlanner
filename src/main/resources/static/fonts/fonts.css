@@ -1,0 +1,11 @@
+@font-face{font-family:CheongmoMyeongjo;src:url('/fonts/NanumMyeongjo-Regular.woff2') format('woff2');font-display:swap}
+@font-face{font-family:CheongmoGothic;src:url('/fonts/NanumGothic-Regular.woff2') format('woff2');font-display:swap}
+@font-face{font-family:CheongmoPen;src:url('/fonts/NanumPenScript-Regular.woff2') format('woff2');font-display:swap}
+@font-face{font-family:CheongmoBrush;src:url('/fonts/NanumBrushScript-Regular.woff2') format('woff2');font-display:swap}
+@font-face{font-family:CheongmoDodum;src:url('/fonts/GowunDodum-Regular.woff2') format('woff2');font-display:swap}
+@font-face{font-family:CheongmoBatang;src:url('/fonts/GowunBatang-Regular.woff2') format('woff2');font-display:swap}
+.font-SERIF{font-family:CheongmoMyeongjo,serif}.font-SANS{font-family:CheongmoGothic,sans-serif}.font-PEN{font-family:CheongmoPen,cursive}.font-BRUSH{font-family:CheongmoBrush,cursive}.font-DODUM{font-family:CheongmoDodum,sans-serif}.font-BATANG{font-family:CheongmoBatang,serif}.font-SYSTEM{font-family:system-ui,sans-serif}
+
+@font-face{font-family:CheongmoMyeongjo;src:url('/fonts/NanumMyeongjo-Bold.woff2') format('woff2');font-weight:700;font-display:swap}
+@font-face{font-family:CheongmoMyeongjo;src:url('/fonts/NanumMyeongjo-ExtraBold.woff2') format('woff2');font-weight:800;font-display:swap}
+

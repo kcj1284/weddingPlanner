@@ -1,0 +1,137 @@
+const assetPathPrefix = "https://www.figma.com/api/mcp/asset/8dda3673-57c4-4d70-be45-2970eb42d2bd";
+const imgEllipse8 = `${assetPathPrefix}/fc86a.png`;
+const imgEllipse10 = `${assetPathPrefix}/18a0e.png`;
+const imgEllipse11 = `${assetPathPrefix}/59e04.png`;
+const imgGroup = `${assetPathPrefix}/9be41.svg`;
+const imgVector1 = `${assetPathPrefix}/6619f.svg`;
+const imgVector3 = `${assetPathPrefix}/5b501.svg`;
+const imgVector4 = `${assetPathPrefix}/b2ba8.svg`;
+const imgVector6 = `${assetPathPrefix}/3eb0a.svg`;
+const imgEllipse6 = `${assetPathPrefix}/0f8b8.svg`;
+const imgVector11 = `${assetPathPrefix}/24ca8.svg`;
+const imgVector12 = `${assetPathPrefix}/2b3a3.svg`;
+
+export default function A44() {
+  return (
+    <div className="bg-white relative size-full" data-node-id="4001:398" data-name="A4 - 4">
+      <div className="absolute inset-[56.29%_4.63%_7.43%_4.54%]" data-node-id="4001:577" data-name="Group">
+        <div className="absolute inset-[-0.1%_0]">
+          <img alt="" className="block max-w-none size-full" src={imgGroup} />
+        </div>
+      </div>
+      <div className="absolute inset-[5.27%_4.63%_94.73%_4.54%]" data-node-id="4001:579">
+        <div className="absolute inset-[-1.53px_0]">
+          <img alt="" className="block max-w-none size-full" src={imgVector1} />
+        </div>
+      </div>
+      <p className="[word-break:break-word] absolute font-['Libre_Bodoni:Bold'] font-bold inset-[2.98%_84.54%_95.24%_4.54%] leading-[normal] text-[12.228px] text-black whitespace-nowrap" data-node-id="4001:580">
+        Newspaper
+      </p>
+      <p className="[word-break:break-word] absolute font-['Libre_Bodoni:Bold'] font-bold inset-[2.98%_39.84%_95.24%_39.82%] leading-[normal] text-[12.228px] text-black whitespace-nowrap" data-node-id="4001:581">
+        Sunday, Sept 6, 2026
+      </p>
+      <p className="[word-break:break-word] absolute font-['NanumMyeongjo:ExtraBold'] font-black inset-[3.05%_4.54%_95.28%_83.02%] leading-[normal] text-[12.228px] text-black whitespace-nowrap" data-node-id="4001:582" style={{ fontVariationSettings: '"CTGR" 0, "wdth" 100' }}>
+        상견례 특집호
+      </p>
+      <div className="absolute inset-[8.94%_4.63%_91.06%_4.54%]" data-node-id="4001:583">
+        <div className="absolute inset-[-0.31px_0]">
+          <img alt="" className="block max-w-none size-full" src={imgVector3} />
+        </div>
+      </div>
+      <p className="[word-break:break-word] absolute bottom-[92.13%] font-['Diphylleia:Regular'] leading-[12.105px] left-[calc(50%-78.5px)] not-italic text-[#111] text-[10px] top-[6.32%] whitespace-nowrap" data-node-id="4001:585">
+        ♡ 따뜻이 맞아주셔서 감사합니다 ♡
+      </p>
+      <p className="[word-break:break-word] absolute font-['Diphylleia:Regular'] inset-[10.32%_67.73%_86.12%_4.54%] leading-[29.377px] not-italic text-[#111] text-[23.382px] whitespace-nowrap" data-node-id="4001:586">
+        재미로 보는 2세
+      </p>
+      <div className="absolute inset-[15.41%_43.21%_84.59%_4.54%]" data-node-id="4001:587">
+        <div className="absolute inset-[-0.31px_0]">
+          <img alt="" className="block max-w-none size-full" src={imgVector4} />
+        </div>
+      </div>
+      <div className="absolute inset-[47.97%_4.63%_52.03%_4.54%]" data-node-id="4001:588">
+        <div className="absolute inset-[-0.31px_0]">
+          <img alt="" className="block max-w-none size-full" src={imgVector3} />
+        </div>
+      </div>
+      <p className="[word-break:break-word] absolute font-['Diphylleia:Regular'] inset-[49.36%_49.75%_47.08%_4.54%] leading-[29.377px] not-italic text-[#111] text-[23.382px] whitespace-nowrap" data-node-id="4001:589">
+        양가 부모님께 드리는 말씀
+      </p>
+      <div className="absolute inset-[54.44%_39.3%_45.56%_4.54%]" data-node-id="4001:590">
+        <div className="absolute inset-[-0.31px_0]">
+          <img alt="" className="block max-w-none size-full" src={imgVector6} />
+        </div>
+      </div>
+      <div className="absolute left-[36.18px] size-[1.836px] top-[86.91px]" data-node-id="4001:591">
+        <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgEllipse6} />
+      </div>
+      <div className="absolute left-[56.99px] size-[1.836px] top-[86.91px]" data-node-id="4001:592">
+        <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgEllipse6} />
+      </div>
+      <div className="absolute left-[178.17px] size-[173.817px] top-[200.13px]" data-node-id="4001:594">
+        <img alt="" className="absolute block inset-0 max-w-none size-full" height="173.817" src={imgEllipse8} width="173.817" />
+      </div>
+      <div className="absolute left-[363px] size-[173.817px] top-[200.13px]" data-node-id="4001:595">
+        <img alt="" className="absolute block inset-0 max-w-none size-full" height="173.817" src={imgEllipse8} width="173.817" />
+      </div>
+      <div className="absolute left-[35.67px] size-[75.586px] top-[143.32px]" data-node-id="4001:596">
+        <img alt="" className="absolute block inset-0 max-w-none size-full" height="75.586" src={imgEllipse10} width="75.586" />
+      </div>
+      <div className="absolute flex items-center justify-center left-[96.26px] size-[88.206px] top-[136.75px]" data-node-id="4001:597">
+        <div className="flex-none rotate-[-10.61deg]">
+          <div className="relative size-[75.586px]">
+            <img alt="" className="absolute block inset-0 max-w-none size-full" height="75.586" src={imgEllipse11} width="75.586" />
+          </div>
+        </div>
+      </div>
+      <div className="absolute h-[11.629px] left-[251px] top-[188.61px] w-[194.32px]" data-node-id="4001:598">
+        <div className="absolute inset-[-2.63%_-0.16%_0_-0.16%]">
+          <img alt="" className="block max-w-none size-full" src={imgVector11} />
+        </div>
+      </div>
+      <div className="absolute h-[15.913px] left-[178.78px] top-[172.7px] w-[172.593px]" data-node-id="4001:599">
+        <div className="absolute inset-[-1.92%_-0.18%_0_0]">
+          <img alt="" className="block max-w-none size-full" src={imgVector12} />
+        </div>
+      </div>
+      <div className="-translate-x-1/2 [word-break:break-word] absolute bottom-[8.91%] font-['Nanum_Myeongjo:Bold'] leading-[0] left-1/2 not-italic text-[#2a2a2a] text-[0px] text-center top-[57.84%] w-[415px] whitespace-pre-wrap" data-node-id="4001:600">
+        <p className="leading-[14px] mb-0 text-[12px]">{`이렇게 두 가족을 한자리에서 뵙게 되니, `}</p>
+        <p className="leading-[14px] mb-0 text-[12px]">저희 둘 다 며칠 전부터 설레기도 하고 긴장도 됩니다 ㅎㅎㅎ</p>
+        <p className="leading-[14px] mb-0 text-[12px]">​</p>
+        <p className="leading-[14px] mb-0 text-[12px]">{`저희는 2020년, 볼링 동아리에서 우연히 만났습니다. `}</p>
+        <p className="leading-[14px] mb-0 text-[12px]">{`그해 여름부터 지금까지, 벌써 6년이 넘는 시간을 함께 보냈어요. `}</p>
+        <p className="leading-[14px] mb-0 text-[12px]">​</p>
+        <p className="leading-[14px] mb-0 text-[12px]">매일 같이 밥 먹고, 놀고, 가끔 투닥거리기도 하면서 지내다 보니,</p>
+        <p className="leading-[14px] mb-0 text-[12px]">어느새 서로가 서로에게 가장 편하고, 없어서는 안 될 소중한 사람이 되었습니다.</p>
+        <p className="leading-[14px] mb-0 text-[12px]">​</p>
+        <p className="leading-[14px] mb-0 text-[12px]">{`내년 9월엔 저희 둘이 정식으로 한 가족이 되려고 합니다. `}</p>
+        <p className="leading-[14px] mb-0 text-[12px]">앞으로도 지금처럼 서로한테 든든한 편이 되어 주고 잘 살아가겠습니다.</p>
+        <p className="leading-[14px] mb-0 text-[12px]">​</p>
+        <p className="leading-[14px] mb-0 text-[12px]">{`저희를 예쁘고 건강하게 키워주신 부모님들 덕분에, `}</p>
+        <p className="leading-[14px] mb-0 text-[12px]">{`사랑을 주는 법과 받는 법을 자연스럽게 배운 것 같아요. `}</p>
+        <p className="leading-[14px] mb-0 text-[12px]">{`아낌없는 사랑과 헌신을 주신 부모님께 정말 감사하다는 말씀드리고 싶습니다. `}</p>
+        <p className="leading-[14px] mb-0 text-[12px]">​</p>
+        <p className="leading-[14px] mb-0 text-[12px]">저희 두 사람, 예쁘게 지켜봐 주시고 많이 응원해 주세요.</p>
+        <p className="leading-[14px] mb-0 text-[12px]">앞으로 첫째 아들, 막내딸로 찾아뵙겠습니다!</p>
+        <p className="leading-[14px] mb-0 text-[12px]">​</p>
+        <p className="text-[12px]">
+          <span className="[word-break:break-word] font-['Nanum_Myeongjo:Regular'] leading-[14px] not-italic">{`♡ `}</span>
+          <span className="leading-[14px]">{`감사합니다, 사랑합니다, 잘 부탁드립니다 `}</span>
+          <span className="[word-break:break-word] font-['Nanum_Myeongjo:Regular'] leading-[14px] not-italic">♡</span>
+        </p>
+      </div>
+      <p className="[word-break:break-word] absolute bottom-[3.8%] font-['Diphylleia:Regular'] leading-[12.105px] left-[calc(50%-100.5px)] not-italic text-[#111] text-[12px] top-[94.66%] whitespace-nowrap" data-node-id="4001:708">
+        Thank you for being part of our story
+      </p>
+    </div>
+  );
+}
+SUPER CRITICAL: The generated React+Tailwind code MUST be converted to match the target project's technology stack and styling system.
+1. Analyze the target codebase to identify: technology stack, styling approach, component patterns, and design tokens
+2. Convert React syntax to the target framework/library
+3. Transform all Tailwind classes to the target styling system while preserving exact visual design
+4. Follow the project's existing patterns and conventions
+DO NOT install any Tailwind as a dependency unless the user instructs you to do so.
+
+Node ids have been added to the code as data attributes, e.g. `data-node-id="1:2"`.
+Images and SVGs will be stored as constants, e.g. const image = `${assetPathPrefix}/<asset file name>`, where assetPathPrefix is declared once at the top of the code and every asset URL interpolates it. These constants will be used in the code as the source for the image, ex: <img src={image} />. Image assets are stored on a remote server for 7 days and can be fetched using the provided URLs until they expire.

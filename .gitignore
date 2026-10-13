@@ -8,3 +8,8 @@ data/
 .idea/
 node_modules/
 artifacts/
+.wrangler/
+**/.wrangler/
+.dev.vars*
+**/.dev.vars*
+deploy/cloudflare/worker-configuration.d.ts

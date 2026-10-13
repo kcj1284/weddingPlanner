@@ -18,11 +18,11 @@
 
 ## 게스트 사용
 
-호스트 화면의 **초대하기 → 초대 대상 이름 → 초대코드·링크 만들기 → 코드 복사 또는 링크 복사**에서 사람마다 링크를 발급한다. 원문은 발급 직후에만 표시하고 DB에는 SHA-256 해시만 저장한다. 링크는 대문자 영문·숫자를 섞은 6자리 난수이며 30일 동안 신규 접속이 가능하다. 한 모임의 활성 링크와 참여자는 각각 최대 100개/명이다. 링크는 해당 사람의 권한이므로 다른 사람에게 전달하면 같은 게스트로 접근할 수 있다.
+호스트 화면의 **초대하기 → 초대 대상 이름 → 초대코드·링크 만들기 → 코드 복사 또는 링크 복사**에서 사람마다 링크를 발급한다. 신규 코드는 DB에 조회용 SHA-256 해시와 복구용 암호문을 저장한다. 호스트는 초대 목록에서 코드를 다시 확인하고 재공유할 수 있다. 이전 해시 전용 초대는 원문을 복구할 수 없으므로 재발급한다. 자세한 내용은 invitation-resend.md를 참고한다. 링크는 대문자 영문·숫자를 섞은 6자리 난수이며 30일 동안 신규 접속이 가능하다. 한 모임의 활성 링크와 참여자는 각각 최대 100개/명이다. 링크는 해당 사람의 권한이므로 다른 사람에게 전달하면 같은 게스트로 접근할 수 있다.
 
 초대 목록의 **초대 취소**를 확인하면 링크를 폐기하고 참여 권한과 기존 투표를 삭제한다. 기존 로그인 세션에서도 해당 모임 접근이 즉시 거부된다. 만료는 새 접속을 막으며 이미 발급된 세션은 세션 만료 또는 초대 취소까지 유지된다. 기존 공유 초대 코드 API는 이전 가입 사용자의 호환성을 위해 유지하지만 새 초대 화면에서는 개인별 코드와 링크를 함께 발급한다.
 
-기존 Oracle 설치에는 `src/main/resources/schema-auth.sql`을 한 번 적용한다. 신규 Oracle 설치는 전체 `schema.sql`을 사용한다. 로컬 H2는 재시작 시 테이블이 자동 추가된다.
+2026-10-12부터 PostgreSQL과 Flyway를 사용한다. 새 스키마는 자동 마이그레이션으로 준비하며, 과거 Oracle/H2 스키마는 docs/legacy에 보관한다. 실행·이관·배포는 [PostgreSQL 안내](postgresql.md)를 참고한다.
 
 공식 문서: [Spring Security OAuth2 Login](https://docs.spring.io/spring-security/reference/servlet/oauth2/login/advanced.html), [카카오 로그인](https://developers.kakao.com/docs/en/kakaologin/rest-api), [네이버 로그인 API](https://developers.naver.com/docs/login/api/api.md), [구글 OAuth2 웹 서버](https://developers.google.com/identity/protocols/oauth2/web-server).
 

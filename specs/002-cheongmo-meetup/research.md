@@ -9,8 +9,8 @@ Source: https://docs.spring.io/spring-boot/system-requirements.html
 
 ## 저장
 
-Decision: JdbcTemplate, Oracle JDBC 운영 프로필 및 H2 Oracle mode 개발 프로필.
-Rationale: 투표 유일 제약, 회원 관계, 모임 잠금을 명시적으로 관리한다. Oracle 계정이 없어도 로컬 검증 가능하다.
+Decision: JdbcTemplate, PostgreSQL 17 로컬/운영 프로필과 Flyway.
+Rationale: 투표 유일 제약, 회원 관계, 모임 잠금을 명시적으로 관리한다. 로컬 PostgreSQL에서 실제 DB 동작을 검증하고 관리형 PostgreSQL에 같은 SQL을 적용한다.
 Alternatives considered: 브라우저 저장소는 여러 사용자 공유와 서버 권한을 보장하지 못한다.
 Source: https://www.oracle.com/database/technologies/faq-jdbc.html
 

@@ -1,0 +1,11 @@
+.git
+.tools
+.venv-speckit
+data
+artifacts
+target
+.env*
+node_modules
+**/node_modules
+**/.wrangler
+deploy

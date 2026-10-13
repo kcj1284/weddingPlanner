@@ -1,0 +1,10 @@
+CREATE TABLE invitation (
+ id VARCHAR(36) PRIMARY KEY,
+ owner_id VARCHAR(36) NOT NULL REFERENCES app_user(id) ON DELETE CASCADE,
+ share_token VARCHAR(32) NOT NULL UNIQUE,
+ payload TEXT NOT NULL,
+ published SMALLINT DEFAULT 0 NOT NULL CHECK(published IN (0,1)),
+ version INTEGER DEFAULT 1 NOT NULL,
+ updated_at TIMESTAMPTZ DEFAULT CURRENT_TIMESTAMP NOT NULL
+);
+CREATE INDEX invitation_owner_idx ON invitation(owner_id);

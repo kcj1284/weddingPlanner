@@ -1,0 +1,31 @@
+services:
+  - type: web
+    name: cheongmo
+    runtime: docker
+    plan: free
+    region: singapore
+    dockerfilePath: ./Dockerfile
+    dockerContext: .
+    healthCheckPath: /
+    autoDeployTrigger: 'off'
+    envVars:
+      - key: SPRING_PROFILES_ACTIVE
+        value: postgres
+      - key: JAVA_TOOL_OPTIONS
+        value: -XX:+UseSerialGC -Xss512k -XX:MaxMetaspaceSize=160m -XX:ReservedCodeCacheSize=64m
+      - key: PUBLIC_BASE_URL
+        value: https://mixdesk.org
+      - key: MAIL_TRANSPORT
+        value: brevo
+      - key: DATABASE_URL
+        sync: false
+      - key: DATABASE_USERNAME
+        sync: false
+      - key: DATABASE_PASSWORD
+        sync: false
+      - key: INVITE_CODE_ENCRYPTION_KEY
+        sync: false
+      - key: BREVO_API_KEY
+        sync: false
+      - key: MAIL_FROM
+        sync: false

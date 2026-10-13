@@ -12,8 +12,8 @@ Spring Boot 단일 서버에서 JavaScript 모바일 화면과 REST 기능을 �
 
 **Language/Version**: Java 21, JavaScript ES modules, HTML, CSS
 **Primary Dependencies**: Spring Boot 4.1.1, MVC, Security, JDBC, Validation, RestClient
-**Storage**: Oracle 운영 프로필; H2 Oracle mode 파일 기반 로컬 프로필
-**Testing**: JUnit 통합 테스트, Playwright 모바일 브라우저 검증
+**Storage**: PostgreSQL 17, Flyway 버전 관리; 로컬 앱 DB/테스트 DB 분리
+**Testing**: 실제 PostgreSQL JUnit 통합 테스트, 브라우저 사용자 여정 검증
 **Target Platform**: 모바일·데스크톱 웹, Java 서버
 **Project Type**: 단일 웹 애플리케이션
 **Performance Goals**: 작은 모임 2–100명에서 정상적인 목록·투표 응답
@@ -27,7 +27,7 @@ Spring Boot 단일 서버에서 JavaScript 모바일 화면과 REST 기능을 �
 - III: 시간은 한국 시간, 투표는 원자적 교체, 투표와 확정은 동일 모임 잠금으로 보호한다.
 - IV: 명세에 권한·집계·확정·검색 실패 자동 검증을 요구했다.
 - V: 단일 배포와 순수 JS로 복잡도를 제한한다. 키보드·모바일·오류 상태를 검증한다.
-- Phase 1 재검토: 동일 통과. Oracle 실제 연결과 외부 검색 성공은 자격 정보 미제공으로 별도 검증 필요.
+- Phase 1 재검토: 동일 통과. PostgreSQL 로컬 실제 연결을 검증한다. 외부 관리형 DB 및 검색 성공은 자격 정보가 필요하다.
 
 ## Project Structure
 
@@ -50,3 +50,7 @@ MVP 후속 운영 기능은 명세 범위에 명시했다. 실제 예약 재고 
 로컬 H2 검증은 Oracle 실환경 검증을 대체하지 않는다.
 
 추가 인증 범위: Spring Security OAuth2 Client로 카카오·구글·네이버 호스트 로그인, 게스트는 해시 토큰에 연결된 내부 참여자와 ROLE_GUEST 세션으로 구현한다. 연동 설정 및 검증 제한은 docs/social-login.md에 기록한다.
+
+## PostgreSQL 전환 결정 (2026-10-12)
+
+사용자가 비용 검토 후 PostgreSQL을 허용했다. Java 21과 JDBC/JS를 유지하고 PostgreSQL 드라이버·DDL·COALESCE·ON CONFLICT 재시도를 사용한다. Flyway 의존성은 DB 스키마 변경의 추적과 검증을 위해 추가한다. 실제 PostgreSQL 테스트 DB를 앱 DB와 분리한다. 기존 H2는 읽기 전용 이관과 전체 내용 비교 후 보존하고 새 DB가 비어 있지 않으면 이관을 거부한다. 로컬 원본 백업과 이전 앱 커밋으로의 복구 방법은 docs/postgresql.md에 기록한다. 운영 전환 이후의 신규 데이터 롤백은 별도 이관 절차가 필요하다. 비용 우선의 초기 배포 후보는 관리형 PostgreSQL 무료 플랜이며, 실제 이용자를 받기 전 백업·복원과 유료 예산을 확인한다.
