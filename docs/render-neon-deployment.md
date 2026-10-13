@@ -49,6 +49,8 @@ Neon 플러그인으로 새로운 청모 전용 프로젝트를 생성했다. �
 
 Render 브라우저 로그인에 성공했다. 공개 GitHub 저장소를 연결하고 Free($0/month)·Docker·Singapore·수동 배포·health check `/` 및 공개 환경 변수를 신규 서비스 입력 화면에 준비했다. 아직 Deploy를 실행하지 않았고 서비스 URL도 생성되지 않았다. 배포 소스는 `codex/render-free-neon` 브랜치이며, 관련 코드와 개발 내역을 GitHub에 업로드했다.
 
+신규 서비스 화면의 브랜치 선택이 main으로 돌아가므로, 공식 Deploy to Render 경로로 브랜치를 명시한 Blueprint 화면으로 전환했다. Render가 해당 브랜치의 render.yaml을 읽어 cheongmo 웹 서비스와 6개 비밀 입력 항목을 표시함을 확인했다. Blueprint 이름은 cheongmo-production이며 생성 전 상태로 유지했다. 앞선 신규 서비스 초안 탭은 닫았다. 이 Blueprint를 사용하면 파일에 지정된 Free·Singapore·Docker·수동 배포 설정이 적용된다.
+
 현재 Render/Neon 계정 도구가 세션에 노출되지 않아 브라우저로 진행한다. Neon은 로그인 화면이므로 사용자 로그인을 요청했다. 로그인 후 기존 cheongmo-production 프로젝트의 접속 정보를 조회하여 운영 환경 변수에 연결해야 한다. Brevo API 키도 아직 없으므로 메일 연동과 실제 수신 검증은 남아 있다. 기존 SMTP 키로 대체하지 않는다. Cloudflare DNS는 아직 변경하지 않았다.
 
 이름 변경 후 자동 테스트 66개, JS 구문 검사, 파일명 검사, 로컬 재빌드·HTTP 200·호스트 로그인·모임 관리 화면을 확인했다. 로컬 DB는 scripts/connect-db.ps1로 접속하며, scripts/inspect_db.sql로 17개 테이블과 마이그레이션 V1~V8 조회에 성공했다.
