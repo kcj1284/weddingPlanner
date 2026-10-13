@@ -51,4 +51,5 @@ Render 브라우저 로그인에 성공했다. 공개 GitHub 저장소를 연결
 
 현재 Render/Neon 계정 도구가 세션에 노출되지 않아 브라우저로 진행한다. Neon은 로그인 화면이므로 사용자 로그인을 요청했다. 로그인 후 기존 cheongmo-production 프로젝트의 접속 정보를 조회하여 운영 환경 변수에 연결해야 한다. Brevo API 키도 아직 없으므로 메일 연동과 실제 수신 검증은 남아 있다. 기존 SMTP 키로 대체하지 않는다. Cloudflare DNS는 아직 변경하지 않았다.
 
-이름 변경 후 자동 테스트 66개, JS 구문 검사, 파일명 검사, 로컬 재빌드·HTTP 200·호스트 로그인·모임 관리 화면을 확인했다. 로컬 DB는 scripts/connect-db.ps1로 접속하며, scripts/inspect-db.sql로 17개 테이블과 마이그레이션 V1~V8 조회에 성공했다.
+이름 변경 후 자동 테스트 66개, JS 구문 검사, 파일명 검사, 로컬 재빌드·HTTP 200·호스트 로그인·모임 관리 화면을 확인했다. 로컬 DB는 scripts/connect-db.ps1로 접속하며, scripts/inspect_db.sql로 17개 테이블과 마이그레이션 V1~V8 조회에 성공했다.
+

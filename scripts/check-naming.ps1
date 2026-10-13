@@ -21,5 +21,10 @@ foreach ($pythonFile in Get-ChildItem (Join-Path $projectRoot 'scripts') -Filter
         $namingIssues.Add("Python 파일 snake_case: $($pythonFile.Name)")
     }
 }
+foreach ($sqlFile in Get-ChildItem (Join-Path $projectRoot 'scripts') -Filter '*.sql') {
+    if ($sqlFile.BaseName -cnotmatch '^[a-z][a-z0-9]*(?:_[a-z0-9]+)*$') {
+        $namingIssues.Add("SQL 파일 snake_case: $($sqlFile.Name)")
+    }
+}
 if ($namingIssues.Count) { throw ($namingIssues -join [Environment]::NewLine) }
-Write-Output 'Naming 검사 통과: Java 타입/파일, 웹 파일, Python 파일. 변수 의미·외부 계약은 코드 리뷰로 확인합니다.'
+Write-Output 'Naming 검사 통과: Java 타입/파일, 웹 파일, Python/SQL 파일. 변수 의미·외부 계약은 코드 리뷰로 확인합니다.'

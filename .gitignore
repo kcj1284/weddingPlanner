@@ -7,6 +7,8 @@ data/
 .env*
 .idea/
 node_modules/
+__pycache__/
+*.pyc
 artifacts/
 .wrangler/
 **/.wrangler/

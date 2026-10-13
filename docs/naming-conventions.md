@@ -17,6 +17,7 @@
 | HTML id·CSS 클래스 | kebab-case | auth-form |
 | HTML data 속성 | kebab-case, JS dataset은 camelCase | data-design-control / designControl |
 | SQL 테이블·컬럼 | snake_case | app_user, display_name |
+| 일반 SQL 파일 | snake_case.sql | inspect_db.sql |
 | Flyway 파일 | V번호__snake_case.sql | V8__persistent_sessions.sql |
 | Python 파일·함수·변수 | snake_case | generate_newspaper.py |
 | PowerShell 파일 | kebab-case.ps1 | connect-db.ps1 |

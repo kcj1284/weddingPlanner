@@ -19,7 +19,7 @@ SELECT id, username, display_name FROM app_user LIMIT 20;
 한 번에 상태를 확인하거나 테스트 DB로 접속할 수도 있다.
 
 ```powershell
-.\scripts\connect-db.ps1 -SqlFile .\scripts\inspect-db.sql
+.\scripts\connect-db.ps1 -SqlFile .\scripts\inspect_db.sql
 .\scripts\connect-db.ps1 -Query 'SELECT current_database(), current_user;'
 .\scripts\connect-db.ps1 -Database test
 ```
@@ -31,3 +31,4 @@ SELECT id, username, display_name FROM app_user LIMIT 20;
 Neon 운영 DB는 프로젝트 생성만 완료됐으며 접속 정보와 서버 배포는 아직 연결되지 않았다. 이 명령은 운영 DB에 연결하지 않는다.
 
 [PostgreSQL psql 공식 문서](https://www.postgresql.org/docs/current/app-psql.html)
+
