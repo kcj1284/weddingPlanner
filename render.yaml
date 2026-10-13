@@ -4,6 +4,7 @@ services:
     runtime: docker
     plan: free
     region: singapore
+    branch: codex/render-free-neon
     dockerfilePath: ./Dockerfile
     dockerContext: .
     healthCheckPath: /

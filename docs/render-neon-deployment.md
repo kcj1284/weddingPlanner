@@ -44,3 +44,11 @@ Neon 플러그인으로 새로운 청모 전용 프로젝트를 생성했다. �
 전체 자동 테스트 66개 통과. Brevo HTTP 요청·실패·키 누락, JDBC 세션 저장·새 요청 복구·로그아웃·비밀번호 버전 변경 시 차단을 검증했다. 별도 테스트 DB에서 힙 256MB·제한된 JVM으로 앱을 실행하고 브라우저 로그인 후 Java 프로세스를 실제 중지·재시작했다. 기존 쿠키로 다시 로그인하지 않고 호스트 화면이 복구됐다. 이때 Windows 작업 집합 약 256MB, private memory 약 389MB였으며 Linux 512MB 컨테이너 부하 검증을 대체하지 않는다. 기존 로컬 서비스는 localhost:8080에서 유지한다.
 
 실제 Render·Neon 연결, 도메인·TLS, 실제 Brevo API 메일 수신은 아직 검증하지 않았다. 향후 결과를 이 문서에 갱신한다.
+
+## 2026-10-14 재개
+
+Render 브라우저 로그인에 성공했다. 공개 GitHub 저장소를 연결하고 Free($0/month)·Docker·Singapore·수동 배포·health check `/` 및 공개 환경 변수를 신규 서비스 입력 화면에 준비했다. 아직 Deploy를 실행하지 않았고 서비스 URL도 생성되지 않았다. 배포 소스는 `codex/render-free-neon` 브랜치이며, 관련 코드와 개발 내역을 GitHub에 업로드했다.
+
+현재 Render/Neon 계정 도구가 세션에 노출되지 않아 브라우저로 진행한다. Neon은 로그인 화면이므로 사용자 로그인을 요청했다. 로그인 후 기존 cheongmo-production 프로젝트의 접속 정보를 조회하여 운영 환경 변수에 연결해야 한다. Brevo API 키도 아직 없으므로 메일 연동과 실제 수신 검증은 남아 있다. 기존 SMTP 키로 대체하지 않는다. Cloudflare DNS는 아직 변경하지 않았다.
+
+이름 변경 후 자동 테스트 66개, JS 구문 검사, 파일명 검사, 로컬 재빌드·HTTP 200·호스트 로그인·모임 관리 화면을 확인했다. 로컬 DB는 scripts/connect-db.ps1로 접속하며, scripts/inspect-db.sql로 17개 테이블과 마이그레이션 V1~V8 조회에 성공했다.
